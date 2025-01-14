@@ -1,0 +1,55 @@
+name: LobbySystem
+version: 1.0
+main: de.zkinqjustin.LobbySystem.LobbySystem
+api-version: 1.21
+commands:
+  spawn:
+    description: Teleport to spawn
+    usage: /<command>
+  setspawn:
+    description: Set the spawn location
+    usage: /<command>
+  pos1:
+    description: Set first position for lobby area
+    usage: /<command>
+  pos2:
+    description: Set second position for lobby area
+    usage: /<command>
+  setlobby:
+    description: Set the lobby area using pos1 and pos2
+    usage: /<command>
+  hide:
+    description: Toggle player visibility
+    usage: /<command>
+  warp:
+    description: Teleport to a warp
+    usage: /<command> <name>
+  setwarp:
+    description: Set a warp location
+    usage: /<command> <name>
+  delwarp:
+    description: Delete a warp location
+    usage: /<command> <name>
+permissions:
+  lobbysystem.setspawn:
+    description: Allows the player to set the spawn location
+    default: op
+  lobbysystem.setlobby:
+    description: Allows the player to set the lobby area
+    default: op
+  lobbysystem.seehidden:
+    description: Allows the player to see hidden players
+    default: op
+  lobbysystem.stayhidden:
+    description: Allows the player to stay hidden even when an admin has the seehidden permission
+    default: op
+  lobbysystem.bypass:
+    description: Allows the player to leave the marked lobby area
+    default: op
+  lobbysystem.setwarp:
+    description: Allows the player to set warp locations
+    default: op
+  lobbysystem.delwarp:
+    description: Allows the player to delete warp locations
+    default: op
+
